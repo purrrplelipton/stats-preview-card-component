@@ -1,0 +1,160 @@
+:root{
+    font-size: 15px;
+    --vd-blue: hsl(233, 47%, 7%);/*main background*/
+    --dd-blue: hsl(244, 38%, 16%);/*card background*/
+    --soft-violet: hsl(277, 64%, 61%);/*accent*/
+    --white: hsl(0, 0%, 100%);/*main heading, stats*/
+    --st-white-I: hsla(0, 0%, 100%, 0.75);/*main paragraph*/
+    --st-white-II: hsla(0, 0%, 100%, 0.6);/*stat headings*/
+}
+*, *::before, *::after{
+    /* outline: 1px solid red; */
+    font-family: 'Inter', sans-serif;
+    transition: all 200ms ease;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--vd-blue);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > .container{
+    width: 72.5%;
+    height: 57.5%;
+    background-color: var(--dd-blue);
+    border-radius: .6rem;
+    overflow: hidden;
+    display: flex;
+}
+body > .container > div:first-of-type{
+    width: 51%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body > .container > div:first-of-type > div:first-of-type > h1:only-of-type{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 0 0;
+    color: var(--white);
+}
+body > .container > div:first-of-type > div:first-of-type > h1:only-of-type > span:only-of-type{
+    color: var(--soft-violet);
+}
+body > .container > div:first-of-type > div:first-of-type > p:only-of-type{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 400;
+    width: 85%;
+    margin: 2.4rem 0 0 0;
+    color: var(--st-white-I);
+}
+body > .container > div:first-of-type > div:last-of-type{
+    width: 85%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+body > .container > div:first-of-type > div:last-of-type > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+body > .container > div:first-of-type > div:last-of-type > div > h1:only-of-type{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0 0 0 0;
+}
+body > .container > div:first-of-type > div:last-of-type > div > p:only-of-type{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    color:var(--st-white-II);
+    margin: 0 0 0 0;
+}
+body > .container > div:last-child{
+    width: 49%;
+    height: 100%;
+    background-color: var(--soft-violet);
+    background-image: url(./images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-blend-mode: color; */
+    /* background-blend-mode: color-burn; */
+    /* background-blend-mode: color-dodge; */
+    /* background-blend-mode: darken; */
+    /* background-blend-mode: difference; */
+    /* background-blend-mode: exclusion; */
+    /* background-blend-mode: hard-light; */
+    /* background-blend-mode: hue; */
+    /* background-blend-mode: lighten; */
+    /* background-blend-mode: luminosity; */
+    background-blend-mode: multiply;
+    /* background-blend-mode: normal; */
+    /* background-blend-mode: overlay; */
+    /* background-blend-mode: saturation; */
+    /* background-blend-mode: screen; */
+    /* background-blend-mode: soft-light; */
+    /* background-blend-mode: inherit; */
+    /* background-blend-mode: initial; */
+    /* background-blend-mode: unset; */
+}
+@media screen and (max-width: 480px) and (min-width: 360px){
+    body > .container{
+        width: 90%;
+        height: 95%;
+        flex-direction: column-reverse;
+    }
+    body > .container > div:last-of-type{
+        height: 30%;
+        width: 100%;
+    }
+    body > .container > div:first-of-type{
+        height: 70%;
+        width: 100%;
+        padding: 2rem;
+    }
+    /* body > .container > div:first-of-type > div:first-of-type{
+        height: 55%;
+    } */
+    body > .container > div:first-of-type > div:first-of-type > h1:only-of-type{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin: .3rem 0 0 0;
+    }
+    body > .container > div:first-of-type > div:first-of-type > p:only-of-type{
+        font-size: 1rem;
+        line-height: 1.75rem;
+        font-weight: 400;
+        text-align: center;
+        width: 85%;
+        margin: 1rem auto 0 auto;
+    }
+    body > .container > div:first-of-type > div:last-of-type{
+        width: 50%;
+        margin: 0 auto;
+        height: 45%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    body > .container > div:first-of-type > div:last-of-type > div{
+        align-items: center;
+    }
+    body > .container > div:first-of-type > div:last-of-type > div > h1:only-of-type{
+        font-size: 1.7rem;
+        margin: 0 0 .3rem 0;
+    }
+    body > .container > div:first-of-type > div:last-of-type > div > p:only-of-type{
+        font-size: 1.1rem;
+    }
+}

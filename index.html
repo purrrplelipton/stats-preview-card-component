@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body
+    class="bg-vd-blu min-h-screen grid place-content-center p-5 font-lex-dec text-white-75"
+  >
+    <main>
+      <article
+        class="grid text-center rounded-lg overflow-hidden bg-dd-blu lg:grid-cols-2 lg:-scale-[1] max-w-5xl"
+      >
+        <picture
+          class="lg:-scale-[1] relative after:absolute after:bg-soft-v after:top-0 after:left-0 after:w-full after:h-full after:opacity-50"
+        >
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <img
+            class="w-full h-full object-cover"
+            src="./images/image-header-mobile.jpg"
+            alt="three women in a cafe, two are working and one is laughing at something"
+          />
+        </picture>
+        <div class="px-8 py-10 lg:pr-12 grid gap-6 lg:-scale-[1] lg:text-left">
+          <h1 class="text-white text-[1.8rem] lg:text-4xl font-int font-bold">
+            Get <span class="text-soft-v">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="text-[.9375rem] lg:text-lg">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="grid gap-4 mt-4 md:grid-cols-3 lg:grid-cols-3">
+            <div>
+              <h2
+                class="text-white text-[1.8rem] lg:text-4xl font-int font-bold"
+              >
+                10k+
+              </h2>
+              <p class="text-white-60 uppercase text-[.9375rem] lg:text-lg">
+                companies
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-white text-[1.8rem] lg:text-4xl font-int font-bold"
+              >
+                314
+              </h2>
+              <p class="text-white-60 uppercase text-[.9375rem] lg:text-lg">
+                templates
+              </p>
+            </div>
+            <div>
+              <h2
+                class="text-white text-[1.8rem] lg:text-4xl font-int font-bold"
+              >
+                12m+
+              </h2>
+              <p class="text-white-60 uppercase text-[.9375rem] lg:text-lg">
+                queries
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <div
+      class="fixed bottom-0 right-0 text-[.6875rem] text-center rotate-[-90deg] translate-x-28 -translate-y-32"
+    >
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-clr-attribution underline"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/purrrplelipton"
+        class="text-clr-attribution underline"
+        >Toby</a
+      >.
+    </div>
+  </body>
+</html>

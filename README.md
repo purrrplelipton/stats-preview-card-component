@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-statspreviewcardcomponent-with-tailwind-css-grid-QCasKVS1XR)
 - [Live Site URL](https://purrrplelipton.github.io/stats-preview-card-component/)
 
 ## My process
